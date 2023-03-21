@@ -1,9 +1,11 @@
 :root {
     background-color: #000000;
 }
+
 body {
     background-color: #1e1e1e;
 }
+
 nav {
     background-color: #000000;
     width: 100%;
@@ -19,7 +21,12 @@ nav {
     justify-content: left;
     width: 100%;
     padding: 15px;
-  }
+}
+
+.navlink {
+    color: #fff;
+    text-decoration: none;
+}
 
 #reserve {
     justify-content: right;
@@ -32,21 +39,79 @@ nav {
     color: #fff;
     text-decoration: none;
 }
+
+/* Reserve Form CSS begins here */
+
 .form {
-    background-image: url(../images/cave-exploring.jpg);
+    background-color: #ffffff;
+    width: auto;
+    height: 100%;
 }
-.data {
-    padding: 15px;
-    background-color: #727272;
-    align-content: center;
+
+.formback {
     position: absolute;
+    width: auto;
+    height: 100vh;
+    background: center center;
+}
+
+.reservecontent {
+    display: flex;
+    position: relative;
     width: 60%;
-    }
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: #7BA0FF;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 48px;
+    color: #fff;
+}
+
+.data {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    flex-wrap: wrap;
+    background-color: #D9D9D9;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50px
+}
+
 .data input {
-    width: 55%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    
-
+    text-align: center;
+    width: 80%;
+    margin: 15px;
 }
-    
+
+.userinfo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.response {
+    display: flex;
+    width: 40%;
+    height: 200px;
+    flex-wrap: nowrap;
+    margin: 10px;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+}
