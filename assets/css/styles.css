@@ -32,3 +32,21 @@ nav {
     color: #fff;
     text-decoration: none;
 }
+.form {
+    background-image: url(../images/cave-exploring.jpg);
+}
+.data {
+    padding: 15px;
+    background-color: #727272;
+    align-content: center;
+    position: absolute;
+    width: 60%;
+    }
+.data input {
+    width: 55%;
+    align-content: center;
+    justify-content: center;
+    
+
+}
+    
