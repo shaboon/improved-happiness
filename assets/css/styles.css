@@ -9,4 +9,26 @@ nav {
     width: 100%;
     position: fixed;
     padding: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.navui {
+    display: inline;
+    vertical-align: middle;
+    justify-content: left;
+    width: 100%;
+    padding: 15px;
+  }
+
+#reserve {
+    justify-content: right;
+    float: right;
+    background-color: #7BA0FF;
+    vertical-align: middle;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
 }
