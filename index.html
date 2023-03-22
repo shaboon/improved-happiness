@@ -32,13 +32,54 @@
         <h3 class="wild caves">Experience Wildlife, Locals, Caves and More...</h3>
     </section>
     <section>
-        <ol>
-            <li><img src="./assets/images/interesting-wildlife2.jpg" alt=""></li>
-            <li><img src="./assets/images/friendly-locals.jpg" alt=""></li>
-            <li><img src="./assets/images/spelunking.jpg" alt=""></li>
-            <li><img src="./assets/images/romance.jpg" alt=""></li>
-            <li><img src="./assets/images/logging.jpg" alt=""></li>
-        </ol>
+        <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Full-width number caption text -->
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1/5</div>
+                    <img src="./assets/images/interesting-wildlife2.jpg" style="width:100%"alt="">
+                    <div class="text"> Image 1</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2/5</div>
+                    <img src="./assets/images/friendly-locals.jpg" style="width:100%"alt="">
+                    <div class="text"> Image 2</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3/5</div>
+                    <img src="./assets/images/spelunking.jpg" style="width:100%"alt="">
+                    <div class="text"> Image 3</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4/5</div>
+                    <img src="./assets/images/romance.jpg" style="width:100%"alt="">
+                    <div class="text"> Image 4</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">5/5</div>
+                    <img src="./assets/images/logging.jpg" style="width:100%"alt="">
+                    <div class="text"> Image 5</div>
+                </div>
+                <!-- Next and Previous buttons -->
+                <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlide(1)">&#10094;</a>
+            </div>
+            <br>
+
+<!-- The dots/circle -->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        
         <button class="caroright">&#8594</button>
     </section>
 
