@@ -27,7 +27,7 @@ bookBtn.on("click", function (event) {
 function parseBook() {
   var lastBook = JSON.parse(localStorage.getItem("user"));
   console.log(lastBook);
-  if ((lastBook.name == "") | (lastBook == null)) {
+  if (lastBook == null) {
     document.querySelector(".info").textContent =
       "“Adventure is Waiting Just for You...”-Edward Puff";
   } else {
