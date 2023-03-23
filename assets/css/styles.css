@@ -96,7 +96,7 @@ main {
 
 @media screen and (max-width: 768px) {
     nav {
-        height: 80px;
+        height: 100px;
     }
 
     .logo:hover > .navlink {
@@ -145,8 +145,6 @@ main {
     position: relative;
     margin: auto;
 }
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
