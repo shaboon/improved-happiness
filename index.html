@@ -30,54 +30,59 @@
     </main>
     <section>
         
-            <!-- Slideshow Container -->
-            <div class="slideshow-container">
-                <!-- Full-width number caption text -->
+      <!-- Slideshow Container -->
+      <div class="slideshow-container fade">
+        <!-- Full-width number caption text -->
 
-                <div class="mySlides fade">
-                    <div class="numbertext">1/5</div>
-                    <img src="./assets/images/interesting-wildlife2.jpg" style="width:100%"alt="unique wildlife found only on Isle Finis Noctis">
-                    <div class="text"> Image 1</div>
-                </div>
+        <div class="mySlides">
+            <div class="MessageInfo">1 / 5</div>
+            <img src="./assets/images/interesting-wildlife2.jpg" style="width:100%"alt="unique wildlife found only on Isle Finis Noctis">
+            <div class="Info">Image 1</div>
+        </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">2/5</div>
-                    <img src="./assets/images/friendly-locals.jpg" style="width:100%"alt="Nearby locals willing to have you for dinner">
-                    <div class="text"> Image 2</div>
-                </div>
+        <div class="mySlides">
+            <div class="MessageInfo">2 / 5</div>
+            <img src="./assets/images/friendly-locals.jpg" style="width:100%"alt="Nearby locals willing to have you for dinner">
+            <div class="Info">Image 2</div>
+        </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">3/5</div>
-                    <img src="./assets/images/spelunking.jpg" style="width:100%"alt="cave diving as provided by the geography of the island">
-                    <div class="text"> Image 3</div>
-                </div>
+        <div class="mySlides">
+            <div class="MessageInfo">3 / 5</div>
+            <img src="./assets/images/spelunking.jpg" style="width:100%"alt="cave diving as provided by the geography of the island">
+            <div class="Info">Image 3</div>
+        </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">4/</div>
-                    <img src="./assets/images/romance.jpg" style="width:100%"alt="">
-                    <div class="text"> Image 4</div>
-                </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext">5/5</div>
-                    <img src="./assets/images/logging.jpg" style="width:100%"alt="">
-                    <div class="text"> Image 5</div>
-                </div>
-                <!-- Next and Previous buttons -->
-                <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlide(1)">&#10094;</a>
-            </div>
-            <section>
-                <h3 class="content wild caves">Experience Wildlife, Locals, Caves and More...</h3>
-            </section>
-            <br>
+        <div class="mySlides">
+            <div class="MessageInfo">4 / 5</div>
+            <img src="./assets/images/romance.jpg" style="width:100%"alt="everything but romance thrives here">
+            <div class="Info">Image 4</div>
+        </div>
+        
+        <div class="mySlides">
+            <div class="MessageInfo">5 / 5</div>
+            <img src="./assets/images/logging.jpg" style="width:100%"alt="here you do everything yourselves, including gathering supplies">
+            <div class="Info">Image 5</div>
+        </div>
+        
+        <!-- Next and Previous buttons -->
+        <a class="back" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="foward" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+    <br>
 
-<!-- The dots/circle -->
-            <div style="text-align: center;">
-                <span class="dot" onclick="mySlides(1)"></span>
-                <span class="dot" onclick="mySlides(2)"></span>
-                <span class="dot" onclick="mySlides(3)"></span>
-                <span class="dot" onclick="mySlides(4)"></span>
+        <!-- The dots/circle -->
+    <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</section>
+    <section>
+        <h3 class="content wild caves">Experience Wildlife, Locals, Caves and More...</h3>
+    </section>
+    <br>     
             </div>
     </section>
 
