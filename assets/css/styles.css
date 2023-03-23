@@ -343,8 +343,18 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     margin: 10px;
+    border-radius: 0px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 0.5em;
+    font-size: 1em;
+}
+
+.info p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
 }
 
 #map {
@@ -353,3 +363,23 @@ main {
     border-radius: 10px;
 }
 
+
+@media screen and (max-width: 950px) {
+    .userinfo {
+        flex-direction: column;
+    }
+
+    .data {
+        height: fit-content;
+    }
+
+    #map {
+        margin: 10px 0px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .info {
+        width: 100%;
+        margin: 0;
+    }
+}

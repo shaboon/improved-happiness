@@ -8,30 +8,6 @@ var userInfo = $(".info");
 
 parseBook();
 
-// function createMarker() {
-//   var markerFrom = L.circleMarker([28.61, 77.23], {
-//     color: "#F00",
-//     radius: 10,
-//   });
-//   var markerTo = L.circleMarker([60.10646, -166.307471], {
-//     color: "#4AFF00",
-//     radius: 10,
-//   });
-//   var from = markerFrom.getLatLng();
-//   var to = markerTo.getLatLng();
-//   markerFrom.bindPopup("Delhi " + from.toString());
-//   markerTo.bindPopup("Mumbai " + to.toString());
-//   map.addLayer(markerTo);
-//   map.addLayer(markerFrom);
-//   getDistance(from, to);
-// }
-
-// function getDistance(from, to) {
-//   var container = document.getElementById("distance");
-//   container.innerHTML =
-//     "New Delhi to Mumbai - " + from.distanceTo(to).toFixed(0) / 1000 + " km";
-// }
-
 bookBtn.on("click", function (event) {
   console.log("line 43");
   event.preventDefault();
@@ -51,24 +27,20 @@ bookBtn.on("click", function (event) {
 function parseBook() {
   var lastBook = JSON.parse(localStorage.getItem("user"));
   console.log(lastBook);
-  if (lastBook == null) {
+  if ((lastBook.name == "") | (lastBook == null)) {
     document.querySelector(".info").textContent =
       "“Adventure is Waiting Just for You...”-Edward Puff";
   } else {
     var bookName = document.querySelector(".flavor");
     var bookDate = document.querySelector(".date");
-    var bookMail = document.querySelector(".flavor");
+    var bookMail = document.querySelector(".email");
     console.log(lastBook);
     bookName.textContent = "Greetings " + lastBook.name;
     bookDate.textContent =
-      "We welcome your anticipated arrival on" +
+      "We welcome your anticipated arrival on " +
       lastBook.date +
-      " and will reach out to '";
-    bookMail.textContent = lastBook.email + "' once transport is ready...";
+      " and will reach out to... ";
+    bookMail.textContent =
+      "'" + lastBook.email + "' once transport is ready...";
   }
 }
-
-// fetch(weatherApi).then(function (response) {
-//   if (response.ok) {
-//   }
-// });
