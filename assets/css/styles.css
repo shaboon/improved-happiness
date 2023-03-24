@@ -394,3 +394,9 @@ main {
         margin: 0;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .info {
+        font-size: 0.8em;
+    }
+}

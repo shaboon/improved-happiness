@@ -17,6 +17,7 @@ This application is to be deployed through the browser and interacted with.
 Do note that no information is distributed outside the local machine, as this is a demo of the site.
 
 ![screenshot of](assets/images/sitescreenshot.png)
+![screenshot of](assets/images/formscreenshot.png)
 
 ## Credits
 
