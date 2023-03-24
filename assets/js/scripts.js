@@ -19,11 +19,16 @@ function getFiveDayWeather(lat, lon) {
       return response.json();
     })
     .then(function (data) {
+      // Current Weather
+      var today = document.querySelectorAll(".today");
+      for (let i = 0; i < today.length; i++) {
+        today[i].innerHTML = data.list[i].main.temp + "°F";
+      }
       // 5 DAY WEATHER DATA
       console.log(data);
       var weather = document.querySelectorAll(".wcard");
       for (let i = 0; i < weather.length; i++) {
-        weather[i].innerHTML = "Temp " + data.list[i].main.temp + "°F";
+        weather[i].innerHTML = data.list[i + 3].main.temp + "°F";
       }
       console.log(data);
       console.log(weather);
