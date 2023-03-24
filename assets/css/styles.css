@@ -325,6 +325,7 @@ main {
     width: 90%;
     border-radius: 10px;
     margin: 15px;
+    padding: 6px;
 }
 
 .data button {
