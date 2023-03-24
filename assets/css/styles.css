@@ -62,6 +62,7 @@ nav {
 
 .content {
     margin-bottom: 15px;
+    padding: 20px;
 }
 
 .explore {
@@ -78,13 +79,11 @@ main {
     margin: 1px 5px;
 }
 
+
 .nature{
     font-family: 'Inter', sans-serif;
     font-size: 50px;
     margin-left: 20px;
-}
-
-.partake {
     display: flex;
     background-color: #D9D9D9;
     width: 100%;
@@ -92,7 +91,6 @@ main {
     text-align: center;
     justify-content: center;
     align-items: center;
-    
 }
 
 .caves {
@@ -105,46 +103,6 @@ main {
     background-color: #D9D9D9;
     width: 65vw;
     height: 250px;
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-        height: 100px;
-    }
-
-    .logo:hover > .navlink {
-        visibility: visible;
-    }
-
-    .navui {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navlink {
-        visibility: hidden;
-    }
-
-    #reserve {
-        position: fixed;
-        top: 30px;
-        right: 5px;
-    }
-    
-    main {
-      flex-direction: column;
-      margin: 0;
-    }
-
-    .partake {
-        margin: 0;
-        height: 50px;
-        font-size: 1.5em;
-    }
-
-    .caves {
-        font-size: 2em;
-    }
 }
 
 .carousel-container {
@@ -225,6 +183,8 @@ main {
 
 #weatherNotice {
     background-color: #D9D9D9;
+    text-align: center;
+    font-size: 4.5em;
     border-radius: 0px 10px 10px 0px;
     color: #000000;
 }
@@ -234,6 +194,65 @@ main {
     background-color: #D9D9D9;
     justify-content: center;
     font-family: 'Italiana', serif;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        width: 100vw;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .logo {
+        padding: 0px;
+        font-size: 1.5em;
+    }
+
+    .navui {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navlink {
+        visibility: hidden;
+    }
+
+    #reserve {
+        position: fixed;
+        top: 30px;
+        right: 5px;
+    }
+    
+    main {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .explore {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .partake {
+        margin: 0px 0px 15px 0px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    .caves {
+        font-size: 1.8em;
+    }
+
+    #weatherNotice {
+        font-size: 2.5em;
+        width: 100%;
+    }
 }
 
 /* Reserve Form CSS begins here */
