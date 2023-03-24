@@ -22,6 +22,10 @@ Do note that no information is distributed outside the local machine, as this is
 
 Sample Code provided by UNCC-VIRT-FSF-FT-02-2023-U-LOLC-M-F
 
+Worked in Collaboration with:\
+Tyrrance Miller
+James Saint Paul III
+
 ## License
 
 This application holds all standard rights.
